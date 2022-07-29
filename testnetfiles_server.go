@@ -44,7 +44,7 @@ func init() {
 }
 
 func main() {
-	port := flag.Uint("port", 9000, "TCP Port Number for Testnetfiles Server")
+	port := flag.Uint("port", 8081, "TCP Port Number for Testnetfiles Server")
 	flag.Parse()
 	app := NewTestnetfilesServer(uint16(*port))
 	app.Run()
